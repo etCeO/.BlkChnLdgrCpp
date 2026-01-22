@@ -2,7 +2,7 @@
 
 - A program that simulates database insertion operations through object-oriented analysis and file processing, modeling how structured data is parsed, validated, and stored to reflect real-world database management workflows.
 
-# AUTHOR INFO
+## Author Info
 
 - Full Name: Ethan E. Lopez
 - Student ID: 2425516
