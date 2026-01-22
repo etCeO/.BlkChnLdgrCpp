@@ -45,7 +45,9 @@ g++ *.cpp -o block.exe
 
 - The program is implemented in C++ using object-oriented principles.
 - Core components include:
-1. Block: Represents an individual block containing structured data.
-2. Blockchain: Manages block insertion, validation, and ledger integrity.
+  
+Block: Represents an individual block containing structured data.
+Blockchain: Manages block insertion, validation, and ledger integrity.
+
 - File processing is used to load block data from text files and persist the blockchain state to disk.
 - The design emphasizes modularity, encapsulation, and separation of concerns to simulate realistic blockchain database workflows.
