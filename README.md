@@ -1,6 +1,6 @@
-# .BlkChnLdgrCpp
+# BlockChain Node Constructor
 
-- A program that simulates adding into databases with object analysis and file processing
+- A program that simulates database insertion operations through object-oriented analysis and file processing, modeling how structured data is parsed, validated, and stored to reflect real-world database management workflows.
 
 # AUTHOR INFO
 
