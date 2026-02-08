@@ -25,26 +25,26 @@
 g++ *.cpp -o block.exe
 
 
-- Run the executable:
+- Run the below executable:
 
 ./block
 
-- The program loads block data from a text file, constructs the blockchain, and performs insertion and persistence operations based on the implemented logic.
+- The program reads block data from a given text file, constructs the blockchain, and runs the insertion and persistence operations based on the implemented logic.
 
 ## Input Format
 
-- The program accepts a plain text (.txt) file containing blockchain block data.
-- Each entry in the file represents a block with fields formatted according to the expected structure defined in the program.
-- The provided Blocks.txt file is used by the loadFromFile() method but may be replaced with any text file that follows the same format.
-- The saveToFile() method generates output files dynamically and does not require a pre-existing text file.
+- The program accepts input in the form of a plain .txt file containing data for blockchains.
+- Each entry in the file represents a block with the appropriate fields formatted as expected by the defined structure in the program.
+- The loadFromFile() method takes data from the Blocks.txt file included, but any text file that uses the same format can replace it.
+- The saveToFile() method dynamically generates output files; thus, there is no need for any pre-existing .txt file for this particular method.
 
 ## Implementation Details
 
 - The program is implemented in C++ using object-oriented principles.
 - Core components include:
-  
-1. Block: Represents an individual block containing structured data.
-2. Blockchain: Manages block insertion, validation, and ledger integrity.
 
-- File processing is used to load block data from text files and persist the blockchain state to disk.
-- The design emphasizes modularity, encapsulation, and separation of concerns to simulate realistic blockchain database workflows.
+1. Block: Represents an individual block containing structured data
+2. Blockchain: Provides functionality for block insertion, validation, and management.
+
+- File processing is used to load block data from text files and persist in evaluating blockchain states.
+- Modularity and encapsulation are emphasized in the design to simulate realistic blockchain database workflows.
