@@ -98,7 +98,7 @@ Responsibilities:
 - Provide accessors/mutators
 - Compute hash values
 
-2. BlockChain
+#### 2. BlockChain
 
 - Manages the collection of blocks and enforces structural integrity.
 
