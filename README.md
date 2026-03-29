@@ -31,12 +31,50 @@ g++ *.cpp -o block.exe
 
 - The program reads block data from a given text file, constructs the blockchain, and runs the insertion and persistence operations based on the implemented logic.
 
+### Program Behavior
+---
+
+Upon execution, the program:
+1. Loads block data from an input file (default: Blocks.txt)
+2. Parses each block entry into structured objects
+3. Inserts blocks sequentially into the blockchain
+4. Validates each block before insertion (e.g., ensuring proper linkage)
+5. Optionally writes the resulting blockchain state to an output file
+
+#### Expected Output
+
+1. Print the blockchain contents to the console
+2. Generate a new .txt file representing the updated blockchain
+
 ## Input Format
 
-- The program accepts input in the form of a plain .txt file containing data for blockchains.
-- Each entry in the file represents a block with the appropriate fields formatted as expected by the defined structure in the program.
-- The loadFromFile() method takes data from the Blocks.txt file included, but any text file that uses the same format can replace it.
-- The saveToFile() method dynamically generates output files; thus, there is no need for any pre-existing .txt file for this particular method.
+The program reads from a .txt file (default: Blocks.txt) containing structured blockchain data or creates data chains from scratch.
+
+### General Structure
+---
+
+Each block in the file should include key fields such as:
+- Block index (or ID)
+- Timestamp
+- Previous hash
+- Current hash
+
+Example (Blocks.txt):
+
+
+
+Format Rules
+Blocks are listed sequentially
+Each block contains a fixed number of lines representing its fields
+Blank lines may separate blocks (depending on parser design)
+The first block (genesis block) typically has:
+A previous hash of 0 or NULL
+Subsequent blocks must:
+Reference the hash of the previous block
+Flexibility
+Any .txt file matching this structure can be used
+The loadFromFile() method reads and parses the input dynamically
+The saveToFile() method generates output files automatically, so no pre-existing output file is required
 
 ## Implementation Details
 
